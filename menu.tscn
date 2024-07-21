@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://c8u8duaxy0o6b"]
+
+[ext_resource type="Script" path="res://ItemList.gd" id="1_emot0"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 313.0
+offset_bottom = 277.0
+item_count = 2
+item_0/text = "Arena"
+item_1/text = "Tawerna"
+script = ExtResource("1_emot0")
+
+[connection signal="item_activated" from="ItemList" to="ItemList" method="_on_item_activated"]

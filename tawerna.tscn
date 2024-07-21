@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://nlb5btppkp5l"]
+
+[ext_resource type="Script" path="res://Tawewrna.gd" id="1_2boyw"]
+
+[node name="Tawerna" type="Node2D"]
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 215.0
+offset_bottom = 241.0
+item_count = 2
+item_0/text = "zamów coś"
+item_1/text = "Chandlaż"
+script = ExtResource("1_2boyw")
+
+[connection signal="item_activated" from="ItemList" to="ItemList" method="_on_item_activated"]

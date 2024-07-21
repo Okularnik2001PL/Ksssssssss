@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://tubii7evy4k7"]
+
+[ext_resource type="Script" path="res://Node2D.gd" id="1_bqu57"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_bqu57")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 378.0
+offset_bottom = 237.0
+theme_override_font_sizes/font_size = 100
+text = "Zbrojny 100"
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = -5.0
+offset_top = 116.0
+offset_right = 358.0
+offset_bottom = 226.0
+theme_override_font_sizes/font_size = 80
+text = "Tarcza 30"
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 216.0
+offset_top = 457.0
+offset_right = 1148.0
+offset_bottom = 654.0
+theme_override_font_sizes/font_size = 100
+text = "Dziki Wojownik 100"
