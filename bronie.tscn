@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://633lxsw6svnm"]
+
+[ext_resource type="Script" path="res://BronieEQ.gd" id="1_mk4xm"]
+
+[node name="Bronie" type="Node2D"]
+script = ExtResource("1_mk4xm")
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 1444.0
+offset_bottom = 751.0

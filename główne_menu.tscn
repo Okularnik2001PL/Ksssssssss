@@ -22,7 +22,7 @@ offset_left = 1.0
 offset_top = 173.0
 offset_right = 201.0
 offset_bottom = 254.0
-text = "wersja3"
+text = "ekwipunek testy"
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
