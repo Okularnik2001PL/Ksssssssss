@@ -24,4 +24,3 @@ func walka():
 func smierc():
 	if HPGracz<1:
 		print("zginoł1")
-
