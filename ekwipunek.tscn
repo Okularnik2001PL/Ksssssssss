@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bhewt3n8pdh5p"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 300.0
+offset_bottom = 300.0
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 450.0
+offset_right = 300.0
+offset_bottom = 650.0
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 100.0
+offset_right = 650.0
+offset_bottom = 300.0
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 450.0
+offset_right = 650.0
+offset_bottom = 650.0
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 800.0
+offset_top = 100.0
+offset_right = 1000.0
+offset_bottom = 300.0
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 800.0
+offset_top = 450.0
+offset_right = 1000.0
+offset_bottom = 650.0
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 1150.0
+offset_top = 100.0
+offset_right = 1350.0
+offset_bottom = 300.0
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 1150.0
+offset_top = 450.0
+offset_right = 1350.0
+offset_bottom = 650.0

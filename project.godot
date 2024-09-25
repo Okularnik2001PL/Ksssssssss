@@ -23,3 +23,8 @@ dane="*res://UbraniaIInne.gd"
 Bronie="*res://Bronie.gd"
 Enemy="*res://Enemy.gd"
 Gracz="*res://Gracz.gd"
+
+[display]
+
+window/size/viewport_width=1450
+window/size/viewport_height=750
