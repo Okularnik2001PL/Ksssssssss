@@ -1,21 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://cva7rw3o7ex6g"]
+[gd_scene load_steps=4 format=3 uid="uid://cva7rw3o7ex6g"]
 
-[ext_resource type="PackedScene" uid="uid://ccvfv2tct4e4d" path="res://gracz.tscn" id="1_uyy3q"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hxb6s"]
-radius = 322.0
-height = 1166.0
+[ext_resource type="Script" path="res://walkaoku.gd" id="1_hods6"]
+[ext_resource type="PackedScene" uid="uid://ccvfv2tct4e4d" path="res://scrypty i sceny oku/gracz.tscn" id="1_uyy3q"]
+[ext_resource type="Script" path="res://scrypty i sceny oku/gracz2.gd" id="3_qb5wh"]
 
 [node name="Node2D" type="Node2D"]
-
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-rotation = 1.5708
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(321, -577)
-shape = SubResource("CapsuleShape2D_hxb6s")
+script = ExtResource("1_hods6")
 
 [node name="RigidBody2D" parent="." instance=ExtResource("1_uyy3q")]
 position = Vector2(158, 302)
-mass = 50.0
+collision_layer = 3
+collision_mask = 3
+gravity_scale = 0.0
+script = ExtResource("3_qb5wh")
+
+[node name="RigidBody2D2" parent="." instance=ExtResource("1_uyy3q")]
+position = Vector2(896, 319)
+collision_layer = 3
+collision_mask = 3
 gravity_scale = 0.0

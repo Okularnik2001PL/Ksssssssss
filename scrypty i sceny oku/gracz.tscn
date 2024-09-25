@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://ccvfv2tct4e4d"]
 
-[ext_resource type="Script" path="res://gracz.gd" id="1_rnn86"]
+[ext_resource type="Script" path="res://scrypty i sceny oku/ememy2.gd" id="1_6xum4"]
 [ext_resource type="Texture2D" uid="uid://bd4n72ry1dmx6" path="res://grafiki/Kuleczka.png" id="1_s2bjs"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_7gh87"]
@@ -9,7 +9,7 @@ radius = 50.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_2yap6"]
 
 [node name="RigidBody2D" type="RigidBody2D"]
-script = ExtResource("1_rnn86")
+script = ExtResource("1_6xum4")
 
 [node name="Kuleczka" type="Sprite2D" parent="."]
 texture = ExtResource("1_s2bjs")
