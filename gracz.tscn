@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccvfv2tct4e4d"]
+
+[ext_resource type="Script" path="res://gracz.gd" id="1_rnn86"]
+[ext_resource type="Texture2D" uid="uid://bd4n72ry1dmx6" path="res://grafiki/Kuleczka.png" id="1_s2bjs"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7gh87"]
+radius = 50.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2yap6"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = ExtResource("1_rnn86")
+
+[node name="Kuleczka" type="Sprite2D" parent="."]
+texture = ExtResource("1_s2bjs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_7gh87")
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(70, 0)
+
+[node name="Area2D" type="Area2D" parent="Node2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D"]
+shape = SubResource("CircleShape2D_2yap6")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -38.0
+offset_top = -28.0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "100"
+
+[connection signal="body_entered" from="Node2D/Area2D" to="." method="_on_area_2d_body_entered"]

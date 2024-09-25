@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://cva7rw3o7ex6g"]
+
+[ext_resource type="PackedScene" uid="uid://ccvfv2tct4e4d" path="res://gracz.tscn" id="1_uyy3q"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hxb6s"]
+radius = 322.0
+height = 1166.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(321, -577)
+shape = SubResource("CapsuleShape2D_hxb6s")
+
+[node name="RigidBody2D" parent="." instance=ExtResource("1_uyy3q")]
+position = Vector2(158, 302)
+mass = 50.0
+gravity_scale = 0.0
