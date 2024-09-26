@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://crf3kxh5xo0w3"
+
+[deps]
+
+files=["res://tabelki/bron_statystki.name.translation", "res://tabelki/bron_statystki.dmg.translation", "res://tabelki/bron_statystki.dmg.translation", "res://tabelki/bron_statystki.mass.translation", "res://tabelki/bron_statystki.Two.translation"]
+
+source_file="res://tabelki/bron_statystki.csv"
+dest_files=["res://tabelki/bron_statystki.name.translation", "res://tabelki/bron_statystki.dmg.translation", "res://tabelki/bron_statystki.dmg.translation", "res://tabelki/bron_statystki.mass.translation", "res://tabelki/bron_statystki.Two.translation"]
+
+[params]
+
+compress=true
+delimiter=1
