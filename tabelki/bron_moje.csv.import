@@ -2,23 +2,14 @@
 
 importer="csv_translation"
 type="Translation"
-<<<<<<< HEAD
-uid="uid://xvc1h6u5pi8k"
+uid="uid://djudrg043kg4i"
 
 [deps]
 
-files=["res://tabelki/bron_moje.ID.translation"]
+files=["res://tabelki/bron_moje.1 3.translation", "res://tabelki/bron_moje.1 4.translation", "res://tabelki/bron_moje.1 5.translation", "res://tabelki/bron_moje.1 6.translation", "res://tabelki/bron_moje.1 7.translation", "res://tabelki/bron_moje.1 8.translation", "res://tabelki/bron_moje.1 9.translation", "res://tabelki/bron_moje.1 10.translation", "res://tabelki/bron_moje.1 2.translation", "res://tabelki/bron_moje.2 3.translation", "res://tabelki/bron_moje.2 2.translation", "res://tabelki/bron_moje.2 3.translation", "res://tabelki/bron_moje.2 4.translation", "res://tabelki/bron_moje.2 .translation"]
 
 source_file="res://tabelki/bron_moje.csv"
-dest_files=["res://tabelki/bron_moje.ID.translation"]
-=======
-uid="uid://d1ivi8xs3b5bn"
-valid=false
-
-[deps]
-
-source_file="res://tabelki/bron_moje.csv"
->>>>>>> e315893da00a3e971e65e0fe5c207e7764140462
+dest_files=["res://tabelki/bron_moje.1 3.translation", "res://tabelki/bron_moje.1 4.translation", "res://tabelki/bron_moje.1 5.translation", "res://tabelki/bron_moje.1 6.translation", "res://tabelki/bron_moje.1 7.translation", "res://tabelki/bron_moje.1 8.translation", "res://tabelki/bron_moje.1 9.translation", "res://tabelki/bron_moje.1 10.translation", "res://tabelki/bron_moje.1 2.translation", "res://tabelki/bron_moje.2 3.translation", "res://tabelki/bron_moje.2 2.translation", "res://tabelki/bron_moje.2 3.translation", "res://tabelki/bron_moje.2 4.translation", "res://tabelki/bron_moje.2 .translation"]
 
 [params]
 
