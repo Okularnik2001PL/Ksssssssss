@@ -20,7 +20,7 @@ func _ready() -> void:
 
 		# Iteracja przez linie i ich podział na kolumny (zakładamy, że dane są rozdzielone przecinkami)
 		for line in lines:
-			var columns = line.split(",")
+			var columns = line.split(";")
 			print(columns)  # Wyświetlenie danych z każdej kolumny
 
 		# Zamknięcie pliku (FileAccess automatycznie zamyka plik po zakończeniu)
