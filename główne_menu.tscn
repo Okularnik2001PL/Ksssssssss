@@ -29,7 +29,7 @@ offset_left = 3.0
 offset_top = 258.0
 offset_right = 203.0
 offset_bottom = 339.0
-text = "ekwipunek testy"
+text = "Sklep"
 
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
