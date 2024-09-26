@@ -28,3 +28,10 @@ Gracz="*res://Gracz.gd"
 
 window/size/viewport_width=1450
 window/size/viewport_height=750
+
+[importer_defaults]
+
+csv_translation={
+"compress": true,
+"delimiter": 1
+}

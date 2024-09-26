@@ -2,6 +2,7 @@
 
 importer="csv_translation"
 type="Translation"
+<<<<<<< HEAD
 uid="uid://xvc1h6u5pi8k"
 
 [deps]
@@ -10,6 +11,14 @@ files=["res://tabelki/bron_moje.ID.translation"]
 
 source_file="res://tabelki/bron_moje.csv"
 dest_files=["res://tabelki/bron_moje.ID.translation"]
+=======
+uid="uid://d1ivi8xs3b5bn"
+valid=false
+
+[deps]
+
+source_file="res://tabelki/bron_moje.csv"
+>>>>>>> e315893da00a3e971e65e0fe5c207e7764140462
 
 [params]
 
