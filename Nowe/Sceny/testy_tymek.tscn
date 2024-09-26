@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbutfgyjc7wbo"]
+
+[ext_resource type="Script" path="res://skrypt_wyciagajcy_dane_z_csv.gd" id="1_nqy0x"]
+
+[node name="TestyTymek" type="Node2D"]
+script = ExtResource("1_nqy0x")
