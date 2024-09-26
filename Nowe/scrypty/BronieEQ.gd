@@ -7,7 +7,6 @@ func _ready() -> void:
 	# Dodawanie przedmiotów do ItemList
 	for i in range(Posiadane.size()):
 		$ItemList.add_item(Posiadane[i])
-
 	# Tworzenie instancji klasy FileAccess
 	var file = FileAccess.open(file_path, FileAccess.READ)
 	
@@ -18,11 +17,14 @@ func _ready() -> void:
 		# Podział na linie
 		var lines = content.split("\n")
 
-		# Iteracja przez linie i ich podział na kolumny (zakładamy, że dane są rozdzielone przecinkami)
+		# Konwersja wierszy na tablicę tablic (gdzie każdy wiersz to osobna tablica)
 		for line in lines:
-			var columns = line.split(";")
-			print(columns)  # Wyświetlenie danych z każdej kolumny
+			var columns = line.split(";")  # Zakładamy, że dane są rozdzielone średnikiem
 
-		# Zamknięcie pliku (FileAccess automatycznie zamyka plik po zakończeniu)
+			# Sprawdzamy, czy nazwa w pierwszej kolumnie to "Miecz"
+			if columns[0] == str(3):
+				var damage = columns[3]  # Pobieramy wartość z drugiej kolumny (obrażenia)
+				print("Obrażenia Miecza:", damage)  # Wyświetlamy obrażenia
+				break  # Zatrzymujemy iterację, ponieważ znaleźliśmy potrzebne dane
 	else:
 		print("Nie można otworzyć pliku:", file_path)
