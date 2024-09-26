@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://djqm52btiecky"]
+
+[node name="Walka" type="Node2D"]
+
+[node name="Ja" type="Node2D" parent="."]
+
+[node name="Przeciwnik" type="Node2D" parent="."]

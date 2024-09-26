@@ -6,7 +6,7 @@ func _on_button_button_down():
 
 
 func _on_button_2_button_down():
-	get_tree().change_scene_to_file("res://oku_menu.tscn")
+	get_tree().change_scene_to_file("res://Nowe/Sceny/arena.tscn")
 
 
 func _on_button_3_pressed() -> void:
