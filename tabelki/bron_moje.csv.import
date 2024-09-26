@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d1ivi8xs3b5bn"
+
+[deps]
+
+files=["res://tabelki/bron_moje.ID.translation"]
+
+source_file="res://tabelki/bron_moje.csv"
+dest_files=["res://tabelki/bron_moje.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1
