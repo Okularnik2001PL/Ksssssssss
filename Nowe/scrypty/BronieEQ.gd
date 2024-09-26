@@ -1,12 +1,8 @@
 extends Node2D
 
-var Posiadane = ["Miecz", "Siekiera"]
 var file_path = "res://tabelki/bron_statystki.csv"
 
 func _ready() -> void:
-	# Dodawanie przedmiotów do ItemList
-	for i in range(Posiadane.size()):
-		$ItemList.add_item(Posiadane[i])
 	# Tworzenie instancji klasy FileAccess
 	var file = FileAccess.open(file_path, FileAccess.READ)
 	
@@ -21,10 +17,12 @@ func _ready() -> void:
 		for line in lines:
 			var columns = line.split(";")  # Zakładamy, że dane są rozdzielone średnikiem
 
-			# Sprawdzamy, czy nazwa w pierwszej kolumnie to "Miecz"
-			if columns[0] == str(3):
-				var damage = columns[3]  # Pobieramy wartość z drugiej kolumny (obrażenia)
-				print("Obrażenia Miecza:", damage)  # Wyświetlamy obrażenia
-				break  # Zatrzymujemy iterację, ponieważ znaleźliśmy potrzebne dane
+			# Sprawdzamy, czy liczba kolumn jest większa niż 1, aby uniknąć błędów indeksowania
+			if columns.size() > 1:
+				if columns[0]!="ID":
+					# Dodawanie przedmiotów do ItemList (zakładam, że druga kolumna to nazwa przedmiotu)
+					$ItemList.add_item(columns[1])
+			else:
+				print("Nieprawidłowy format danych w wierszu:", line)
 	else:
 		print("Nie można otworzyć pliku:", file_path)
