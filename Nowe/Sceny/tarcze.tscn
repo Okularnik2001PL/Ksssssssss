@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0gq166wpf8u7"]
+
+[ext_resource type="Script" path="res://Nowe/scrypty/tarcze.gd" id="1_do5nt"]
+
+[node name="Tarcze" type="Node2D"]
+script = ExtResource("1_do5nt")
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 1450.0
+offset_bottom = 746.0

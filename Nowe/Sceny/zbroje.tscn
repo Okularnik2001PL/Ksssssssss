@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://1fs1ueoiw8w0"]
+
+[ext_resource type="Script" path="res://Nowe/scrypty/zbroje.gd" id="1_u0ag5"]
+
+[node name="Zbroje" type="Node2D"]
+script = ExtResource("1_u0ag5")
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 1451.0
+offset_bottom = 748.0

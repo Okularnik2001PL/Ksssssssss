@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bhewt3n8pdh5p"]
 
-[ext_resource type="Script" path="res://ekwipuneknew.gd" id="1_i3xbk"]
+[ext_resource type="Script" path="res://Nowe/scrypty/ekwipuneknew.gd" id="1_i3xbk"]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_i3xbk")

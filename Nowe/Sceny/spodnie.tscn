@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://xhi4ggqrr1lf"]
+
+[ext_resource type="Script" path="res://Nowe/scrypty/spodnie.gd" id="1_4agig"]
+
+[node name="Spodnie" type="Node2D"]
+script = ExtResource("1_4agig")
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 1454.0
+offset_bottom = 748.0

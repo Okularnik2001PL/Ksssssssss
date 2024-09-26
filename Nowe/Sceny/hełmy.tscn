@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmowa6bdski3y"]
+
+[ext_resource type="Script" path="res://Nowe/scrypty/hełmy.gd" id="1_rfbyh"]
+
+[node name="Hełmy" type="Node2D"]
+script = ExtResource("1_rfbyh")
+
+[node name="ItemList" type="ItemList" parent="."]
+offset_right = 1455.0
+offset_bottom = 742.0
