@@ -22,7 +22,7 @@ func _ready() -> void:
 			if line.strip_edges() == "": 
 				print("przeskok") # Sprawdza, czy linia jest pusta
 				continue  # Pomija pustą linię
-			var columns = line.split(",")  # Zakładamy, że dane są rozdzielone średnikiem
+			var columns = line.split(";")  # Zakładamy, że dane są rozdzielone średnikiem
 			# Sprawdzamy, czy liczba kolumn jest większa niż 1, aby uniknąć błędów indeksowania
 			if columns.size() > 1 and columns[0] != "ID":
 				# Przeszukiwanie drugiego pliku CSV

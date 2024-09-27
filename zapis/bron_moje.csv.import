@@ -14,4 +14,4 @@ dest_files=["res://zapis/bron_moje.Typ.translation"]
 [params]
 
 compress=true
-delimiter=0
+delimiter=1

@@ -20,7 +20,7 @@ func _on_button_pressed() -> void:
 
 		# Tworzenie nowych danych jako string rozdzielony średnikiem
 		var new_data = [str(ID), "2"]
-		var new_line = ",".join(new_data) + "\n"  # Użycie nowej linii jako separatora między wierszami
+		var new_line = ";".join(new_data) + "\n"  # Użycie nowej linii jako separatora między wierszami
 
 		# Zapis nowej linii do pliku
 		file.store_string(new_line)
@@ -48,7 +48,7 @@ func _on_button_2_pressed() -> void:
 
 		# Tworzenie nowych danych jako string rozdzielony średnikiem
 		var new_data = [str(ID), "3"]
-		var new_line = ",".join(new_data) + "\n"  # Użycie nowej linii jako separatora między wierszami
+		var new_line = ";".join(new_data) + "\n"  # Użycie nowej linii jako separatora między wierszami
 
 		# Zapis nowej linii do pliku
 		file.store_string(new_line)
