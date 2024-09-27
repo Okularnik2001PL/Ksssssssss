@@ -1,6 +1,6 @@
 extends Node2D
 
-var file_path = "res://tabelki/bron_moje.csv"
+var file_path = "res://zapis/bron_moje.csv"
 var Dane = "res://tabelki/bron_statystki.csv"
 
 func _ready() -> void:
@@ -19,19 +19,24 @@ func _ready() -> void:
 		
 		# Konwersja wierszy na tablicę tablic (gdzie każdy wiersz to osobna tablica)
 		for line in lines:
-			var columns = line.split(";")  # Zakładamy, że dane są rozdzielone średnikiem
-			
+			if line.strip_edges() == "": 
+				print("przeskok") # Sprawdza, czy linia jest pusta
+				continue  # Pomija pustą linię
+			var columns = line.split(",")  # Zakładamy, że dane są rozdzielone średnikiem
 			# Sprawdzamy, czy liczba kolumn jest większa niż 1, aby uniknąć błędów indeksowania
 			if columns.size() > 1 and columns[0] != "ID":
 				# Przeszukiwanie drugiego pliku CSV
 				for line2 in lines2:
 					var columns2 = line2.split(";")  # Rozdzielamy linie w drugim pliku na kolumny
-
 					# Sprawdzamy, czy w obu plikach ID się zgadza (kolumna 0 w obu plikach)
-					if columns2.size() > 1 and columns2[0] == columns[1]:
+					if columns2[0].strip_edges() == columns[1].strip_edges():
 						# Dodawanie przedmiotu do ItemList z drugiego pliku
 						$ItemList.add_item(columns2[1])  # Zakładamy, że druga kolumna to nazwa przedmiotu
+					else:
+						print("pierwszy")
+						print(columns2[0])
+						print(columns[1])
 			else:
-				print("Nieprawidłowy format danych w wierszu:", line)
-	else:
-		print("Nie można otworzyć pliku:", file_path)
+				print("drugi")
+				print(columns.size())
+				print(columns[0])

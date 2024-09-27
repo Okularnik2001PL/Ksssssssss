@@ -31,7 +31,14 @@ offset_right = 203.0
 offset_bottom = 339.0
 text = "Sklep"
 
+[node name="Button5" type="Button" parent="."]
+offset_top = 343.0
+offset_right = 205.0
+offset_bottom = 440.0
+text = "reset posiadania"
+
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]

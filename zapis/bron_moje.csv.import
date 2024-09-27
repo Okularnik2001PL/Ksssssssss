@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://6kyjgvsvo17m"
+
+[deps]
+
+files=["res://zapis/bron_moje.Typ.translation"]
+
+source_file="res://zapis/bron_moje.csv"
+dest_files=["res://zapis/bron_moje.Typ.translation"]
+
+[params]
+
+compress=true
+delimiter=0

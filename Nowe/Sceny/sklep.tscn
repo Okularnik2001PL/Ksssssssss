@@ -10,4 +10,12 @@ offset_right = 180.0
 offset_bottom = 101.0
 text = "Kup Siekiera"
 
+[node name="Button2" type="Button" parent="."]
+offset_left = 1.0
+offset_top = 103.0
+offset_right = 181.0
+offset_bottom = 204.0
+text = "Kup Włucznie"
+
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
