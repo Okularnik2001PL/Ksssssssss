@@ -6,10 +6,10 @@ uid="uid://6kyjgvsvo17m"
 
 [deps]
 
-files=["res://zapis/bron_moje.Typ.translation"]
+files=["res://zapis/bron_moje.ID.translation"]
 
 source_file="res://zapis/bron_moje.csv"
-dest_files=["res://zapis/bron_moje.Typ.translation"]
+dest_files=["res://zapis/bron_moje.ID.translation"]
 
 [params]
 

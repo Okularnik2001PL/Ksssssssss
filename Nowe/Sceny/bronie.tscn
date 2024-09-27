@@ -8,3 +8,5 @@ script = ExtResource("1_hv8t8")
 [node name="ItemList" type="ItemList" parent="."]
 offset_right = 1444.0
 offset_bottom = 751.0
+
+[connection signal="item_activated" from="ItemList" to="." method="_on_item_list_item_activated"]

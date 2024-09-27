@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://chpqvnjp1ef50"
+
+[deps]
+
+files=["res://zapis/EQ_gracz/bron_EQ_gracz.1.translation"]
+
+source_file="res://zapis/EQ_gracz/bron_EQ_gracz.csv"
+dest_files=["res://zapis/EQ_gracz/bron_EQ_gracz.1.translation"]
+
+[params]
+
+compress=true
+delimiter=1

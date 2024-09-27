@@ -57,3 +57,7 @@ func _on_button_2_pressed() -> void:
 		print("Nowa linia została dodana do pliku:", new_line)
 	else:
 		print("Nie można otworzyć pliku:", file_path)
+
+
+func _on_button_3_pressed() -> void:
+	get_tree().change_scene_to_file("res://główne_menu.tscn")

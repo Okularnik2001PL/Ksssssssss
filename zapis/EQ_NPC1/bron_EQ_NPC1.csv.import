@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cyuxmcguy6ppt"
+
+[deps]
+
+files=["res://zapis/EQ_NPC1/bron_EQ_NPC1.ID.translation"]
+
+source_file="res://zapis/EQ_NPC1/bron_EQ_NPC1.csv"
+dest_files=["res://zapis/EQ_NPC1/bron_EQ_NPC1.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

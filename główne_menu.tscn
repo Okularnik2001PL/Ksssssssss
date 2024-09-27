@@ -15,7 +15,7 @@ offset_left = 2.0
 offset_top = 78.0
 offset_right = 210.0
 offset_bottom = 170.0
-text = "wersja 2"
+text = "Wyposażenie"
 
 [node name="Button3" type="Button" parent="."]
 offset_left = 1.0
