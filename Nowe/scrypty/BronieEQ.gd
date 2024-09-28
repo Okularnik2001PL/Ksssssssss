@@ -33,18 +33,25 @@ func _ready() -> void:
 func _on_item_list_item_activated(index: int) -> void:
 	var file = FileAccess.open(Ekwipunek, FileAccess.READ_WRITE)
 	var file2 = FileAccess.open(file_path, FileAccess.READ)
-	if file&&file2:
+	if file and file2:
 		# Odczytanie zawartości pliku
 		var content = file.get_buffer(file.get_length()).get_string_from_utf8()
 		var content2 = file2.get_buffer(file2.get_length()).get_string_from_utf8()
 		var lines = content.split("\n")
 		var lines2 = content2.split("\n")
 		var new_content = ""
+		
 		# Modyfikacja odpowiednich danych
 		for line in lines:
 			if line.strip_edges() == "":  # Pomija puste linie
 				continue
-			var columns = line.split(";")  # PackedStringArray
+			
+			var columns = line.split(";")
+			
+			# Sprawdzamy, czy kolumny mają wystarczającą ilość elementów
+			if columns.size() < 1:
+				continue
+			
 			# Tworzenie zwykłej tablicy na podstawie PackedStringArray
 			var columns_array = []
 			for i in range(columns.size()):
@@ -53,19 +60,26 @@ func _on_item_list_item_activated(index: int) -> void:
 			if columns_array[0] != "ID":  # Sprawdzenie, czy nie jest to nagłówek
 				for line2 in lines2:
 					var columns2 = line2.split(";")
-					var oblicz=index+1
-					print(oblicz)
-					print(columns2[1])
-					if columns2[0]==str(oblicz):
-						var dane_do = columns2[1] 
+					
+					# Sprawdzamy, czy kolumny2 mają wystarczającą ilość elementów i odpowiedni typ
+					if columns2.size() < 1||columns2[0]==""||columns2[0]=="ID":
+						continue
+					#obliczamy id przedmiotu
+					var oblicz = index + 1
+					#sukamy w skszynce
+					if columns2[0] == str(oblicz):
+						var dane_do = columns2[1]
 						print(dane_do)
 						columns_array[1] = str(dane_do)  # Modyfikowanie wartości w kolumnie 1
+				
 				# Odtwarzanie linii po modyfikacji
 				new_content += ";".join(columns_array) + "\n"
+		
 		# Przechodzenie na początek pliku
 		file.seek(0)
 		# Zapisanie zmodyfikowanych danych do pliku
 		file.store_string(new_content)
 		# Zamykanie pliku
 		file.close()
+	
 	get_tree().change_scene_to_file("res://Nowe/Sceny/Wyposażenie.tscn")
