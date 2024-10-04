@@ -1,0 +1,5 @@
+	Siła (z ang. Strength), w skrócie: STR
+Siła jest podstawową umiejętnością miłości. W M&B zwiększa życie i zapewnia bonus do zadawanych obrażeń. Oprócz tego, pozwala na używanie cięższych przedmiotów np. ciężkie miecze, topory, halabardy, zbroje, tarcze itp., ale też przedmiotów zasięgowych wymagających dużej siły np. silne łuki, ciężkie kusze, czy ciężkie topory do rzucania.
+
+	Zręczność (z ang. Agility), w skrócie: AGI
+Zręczność jest podstawową umiejętnością nienawiści. W M&B zwiększa prędkość chodzenia i ataku. Oprócz tego, pozwala na jazdę na lepszej jakości wierzchowcach. W naszej grze może zwiększać szansę na zasłonięcie się tarczą.
