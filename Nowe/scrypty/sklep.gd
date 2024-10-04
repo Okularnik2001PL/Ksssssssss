@@ -30,7 +30,6 @@ func _on_button_pressed() -> void:
 		
 		# Wyznaczenie nowego ID na podstawie najwyższego ID
 		var new_id = highest_id + 1
-		print("Nowe ID:", new_id)
 		
 		# Tworzenie nowych danych jako string rozdzielony średnikiem
 		var new_data = [str(new_id), "2"]  # Zmienna "2" dla tego przykładu
@@ -41,13 +40,6 @@ func _on_button_pressed() -> void:
 		# Zapis nowej linii do pliku
 		file.store_string(new_line)
 		file.close()
-
-		print("Nowa linia została dodana do pliku:", new_line)
-	else:
-		print("Nie można otworzyć pliku:", file_path)
-
-
-
 func _on_button_2_pressed() -> void:
 	# Otwieranie pliku w trybie zapisu z dodawaniem danych (READ_WRITE)
 	var file = FileAccess.open(file_path, FileAccess.READ_WRITE)

@@ -14,12 +14,13 @@ func _ready() -> void:
 		var lines2 = content2.split("\n")
 		for line in lines:
 			var columns = line.split(";")
-			for line2 in lines2: 
-				var columns2 = line2.split(";")
-				if columns[0]!="ID"&&columns.size() > 1:
-					if columns2[0]!="ID":
-						if columns2[0]==columns[1]:
-							$"VBoxContainer/HBoxContainer/Ręka1".text=columns2[1]
+			if columns[0]==str(1):
+				for line2 in lines2: 
+					var columns2 = line2.split(";")
+					if columns[0]!="EQ"&&columns.size() > 1:
+						if columns2[0]!="ID":
+							if columns2[0]==columns[1]:
+								$"VBoxContainer/HBoxContainer/Ręka1".text=columns2[1]
 
 
 func _on_głowa_pressed() -> void:
