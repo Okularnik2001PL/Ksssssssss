@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://ba58r8k6cjvg4"
+
+[deps]
+
+files=["res://tabelki/spodnie_statystki.name.translation", "res://tabelki/spodnie_statystki.armour.translation", "res://tabelki/spodnie_statystki.mass.translation"]
+
+source_file="res://tabelki/spodnie_statystki.csv"
+dest_files=["res://tabelki/spodnie_statystki.name.translation", "res://tabelki/spodnie_statystki.armour.translation", "res://tabelki/spodnie_statystki.mass.translation"]
+
+[params]
+
+compress=true
+delimiter=1

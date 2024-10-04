@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://canlw22fmxic"
+
+[deps]
+
+files=["res://tabelki/helmy_statystyki.name.translation", "res://tabelki/helmy_statystyki.armour.translation", "res://tabelki/helmy_statystyki.mass.translation"]
+
+source_file="res://tabelki/helmy_statystyki.csv"
+dest_files=["res://tabelki/helmy_statystyki.name.translation", "res://tabelki/helmy_statystyki.armour.translation", "res://tabelki/helmy_statystyki.mass.translation"]
+
+[params]
+
+compress=true
+delimiter=1
