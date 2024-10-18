@@ -42,38 +42,36 @@ func _on_item_list_item_activated(index: int) -> void:
 		var new_content = ""
 		
 		# Modyfikacja odpowiednich danych
-		for line in lines:
-			if line.strip_edges() == "":  # Pomija puste linie
-				continue
-			
-			var columns = line.split(";")
-			
-			# Sprawdzamy, czy kolumny mają wystarczającą ilość elementów
-			if columns.size() < 1:
-				continue
+		if lines[0].strip_edges() == "":  # Pomija puste linie
+			print("pusta")
+		var columns = lines[0].split(";")
+		print(columns)
+		# Sprawdzamy, czy kolumny mają wystarczającą ilość elementów
+		if columns.size() < 1:
+			print("za mała")
 			
 			# Tworzenie zwykłej tablicy na podstawie PackedStringArray
-			var columns_array = []
-			for i in range(columns.size()):
-				columns_array.append(columns[i])
+		var columns_array = []
+		for i in range(columns.size()):
+			columns_array.append(columns[i])
 			
-			if columns_array[0] != "ID":  # Sprawdzenie, czy nie jest to nagłówek
-				for line2 in lines2:
-					var columns2 = line2.split(";")
+		if columns_array[0] != "ID":  # Sprawdzenie, czy nie jest to nagłówek
+			for line2 in lines2:
+				var columns2 = line2.split(";")
 					
 					# Sprawdzamy, czy kolumny2 mają wystarczającą ilość elementów i odpowiedni typ
-					if columns2.size() < 1||columns2[0]==""||columns2[0]=="ID":
-						continue
+				if columns2.size() < 1||columns2[0]==""||columns2[0]=="ID":
+					continue
 					#obliczamy id przedmiotu
-					var oblicz = index + 1
+				var oblicz = index + 1
 					#sukamy w skszynce
-					if columns2[0] == str(oblicz):
-						var dane_do = columns2[1]
-						print(dane_do)
-						columns_array[1] = str(dane_do)  # Modyfikowanie wartości w kolumnie 1
+				if columns2[0] == str(oblicz):
+					var dane_do = columns2[1]
+					print(dane_do)
+					columns_array[1] = str(dane_do)  # Modyfikowanie wartości w kolumnie 1
 				
 				# Odtwarzanie linii po modyfikacji
-				new_content += ";".join(columns_array) + "\n"
+			new_content += ";".join(columns_array) + "\n"
 		
 		# Przechodzenie na początek pliku
 		file.seek(0)

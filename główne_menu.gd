@@ -42,3 +42,7 @@ func _on_button_5_pressed() -> void:
 			print("Plik ma mniej niż dwie linie.")
 	else:
 		print("Nie można otworzyć pliku:", file_path)
+
+
+func _on_button_6_pressed() -> void:
+	get_tree().change_scene_to_file("res://Nowe/Sceny/arena2.tscn")

@@ -1,7 +1,7 @@
-﻿ID;name;durability;mass
-1;Tarcza z drzewa afrykańskiego (Baobab);40;10
-2;Tarcza miłości;25;2
-3;Prostokątna tarcza hoplity (Kartagina);50;7
-4;Mała okrągła tarcza (Kartagina);30;3
-5;Tarcza pikiniera (Macedonia);20;1
-6;Bambusowa tarcza;15;6
+﻿ID;name;durability;size;mass
+1;Tarcza z drzewa afrykańskiego (Baobab);40;6;10
+2;Tarcza miłości;25;3;2
+3;Prostokątna tarcza hoplity (Kartagina);50;6;7
+4;Mała okrągła tarcza (Kartagina);30;2;3
+5;Tarcza pikiniera (Macedonia);20;1;1
+6;Bambusowa tarcza;15;5;6

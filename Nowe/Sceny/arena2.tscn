@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8ehlvpti5pt6"]
+
+[ext_resource type="Script" path="res://arena2.gd" id="1_1bcc2"]
+
+[node name="Arena" type="Node2D"]
+script = ExtResource("1_1bcc2")
+
+[node name="Gracz" type="Label" parent="."]
+offset_left = 2.0
+offset_top = 1.0
+offset_right = 42.0
+offset_bottom = 24.0
+
+[node name="HP" type="Label" parent="Gracz"]
+layout_mode = 0
+offset_top = 21.0
+offset_right = 40.0
+offset_bottom = 44.0
+
+[node name="Enemy" type="Label" parent="."]
+offset_left = 1399.0
+offset_top = 11.0
+offset_right = 1439.0
+offset_bottom = 34.0
+
+[node name="HP" type="Label" parent="Enemy"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 34.0
+offset_right = 39.0
+offset_bottom = 57.0
