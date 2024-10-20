@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://byo2e0836xgip"
+
+[deps]
+
+files=["res://zapis/zbroje_moje.ID.translation"]
+
+source_file="res://zapis/zbroje_moje.csv"
+dest_files=["res://zapis/zbroje_moje.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

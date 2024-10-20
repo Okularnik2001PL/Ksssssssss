@@ -21,6 +21,7 @@ func _ready() -> void:
 						if columns2[0]!="ID":
 							if columns2[0]==columns[1]:
 								$"VBoxContainer/HBoxContainer/Ręka1".text=columns2[1]
+								print(columns)
 
 
 func _on_głowa_pressed() -> void:

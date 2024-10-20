@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cqqfw0sotu77l"
+
+[deps]
+
+files=["res://zapis/EQ_NPC1/tarcze_EQ_NPC.ID.translation"]
+
+source_file="res://zapis/EQ_NPC1/tarcze_EQ_NPC.csv"
+dest_files=["res://zapis/EQ_NPC1/tarcze_EQ_NPC.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

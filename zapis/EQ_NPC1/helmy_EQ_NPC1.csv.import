@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://br064tvw6mymn"
+
+[deps]
+
+files=["res://zapis/EQ_NPC1/helmy_EQ_NPC1.ID.translation"]
+
+source_file="res://zapis/EQ_NPC1/helmy_EQ_NPC1.csv"
+dest_files=["res://zapis/EQ_NPC1/helmy_EQ_NPC1.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

@@ -6,10 +6,10 @@ uid="uid://chpqvnjp1ef50"
 
 [deps]
 
-files=["res://zapis/EQ_gracz/bron_EQ_gracz.2.translation"]
+files=["res://zapis/EQ_gracz/bron_EQ_gracz.3.translation"]
 
 source_file="res://zapis/EQ_gracz/bron_EQ_gracz.csv"
-dest_files=["res://zapis/EQ_gracz/bron_EQ_gracz.2.translation"]
+dest_files=["res://zapis/EQ_gracz/bron_EQ_gracz.3.translation"]
 
 [params]
 

@@ -6,10 +6,10 @@ uid="uid://bsm23so8jj6v"
 
 [deps]
 
-files=["res://tabelki/tarcze_statystki.name.translation", "res://tabelki/tarcze_statystki.durability.translation", "res://tabelki/tarcze_statystki.mass.translation"]
+files=["res://tabelki/tarcze_statystki.name.translation", "res://tabelki/tarcze_statystki.durability.translation", "res://tabelki/tarcze_statystki.size.translation", "res://tabelki/tarcze_statystki.mass.translation"]
 
 source_file="res://tabelki/tarcze_statystki.csv"
-dest_files=["res://tabelki/tarcze_statystki.name.translation", "res://tabelki/tarcze_statystki.durability.translation", "res://tabelki/tarcze_statystki.mass.translation"]
+dest_files=["res://tabelki/tarcze_statystki.name.translation", "res://tabelki/tarcze_statystki.durability.translation", "res://tabelki/tarcze_statystki.size.translation", "res://tabelki/tarcze_statystki.mass.translation"]
 
 [params]
 

@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cqk3uop0dbksi"
+
+[deps]
+
+files=["res://zapis/EQ_gracz/tarcze_EQ_gracz.ID.translation"]
+
+source_file="res://zapis/EQ_gracz/tarcze_EQ_gracz.csv"
+dest_files=["res://zapis/EQ_gracz/tarcze_EQ_gracz.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1
