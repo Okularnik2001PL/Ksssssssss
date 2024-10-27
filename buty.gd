@@ -1,8 +1,8 @@
 extends Node2D
 
-var file_path = "res://zapis/EQ_gracz/buty_EQ_moje.csv"
+var file_path = "res://zapis/buty_moje.csv"
 var Dane = "res://tabelki/buty_statystyki.csv"
-var Ekwipunek = "res://zapis/buty_moje.csv"
+var Ekwipunek = "res://zapis/EQ_gracz/buty_EQ_moje.csv"
 
 func _ready() -> void:
 	# Tworzenie instancji klasy FileAccess
