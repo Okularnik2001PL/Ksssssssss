@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cue0nlo7hw2dj"
+
+[deps]
+
+files=["res://zapis/helmy_moje.ID.translation"]
+
+source_file="res://zapis/helmy_moje.csv"
+dest_files=["res://zapis/helmy_moje.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

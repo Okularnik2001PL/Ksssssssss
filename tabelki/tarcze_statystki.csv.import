@@ -2,18 +2,14 @@
 
 importer="csv_translation"
 type="Translation"
-<<<<<<< HEAD
-uid="uid://bsm23so8jj6v"
-=======
-uid="uid://cw0rrtttpn77u"
->>>>>>> 30f104946e46a56cbb2edb0c68da66159a020d36
+uid="uid://bc4fmmy6kh1jm"
 
 [deps]
 
-files=["res://tabelki/tarcze_statystki.name.translation", "res://tabelki/tarcze_statystki.durability.translation", "res://tabelki/tarcze_statystki.mass.translation"]
+files=["res://tabelki/tarcze_statystki.name.translation", "res://tabelki/tarcze_statystki.durability.translation", "res://tabelki/tarcze_statystki.size.translation", "res://tabelki/tarcze_statystki.mass.translation"]
 
 source_file="res://tabelki/tarcze_statystki.csv"
-dest_files=["res://tabelki/tarcze_statystki.name.translation", "res://tabelki/tarcze_statystki.durability.translation", "res://tabelki/tarcze_statystki.mass.translation"]
+dest_files=["res://tabelki/tarcze_statystki.name.translation", "res://tabelki/tarcze_statystki.durability.translation", "res://tabelki/tarcze_statystki.size.translation", "res://tabelki/tarcze_statystki.mass.translation"]
 
 [params]
 

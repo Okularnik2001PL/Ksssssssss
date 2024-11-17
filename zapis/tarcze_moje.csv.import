@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://d2k3ha77pcxgj"
+
+[deps]
+
+files=["res://zapis/tarcze_moje.ID.translation"]
+
+source_file="res://zapis/tarcze_moje.csv"
+dest_files=["res://zapis/tarcze_moje.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

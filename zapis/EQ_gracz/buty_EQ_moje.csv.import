@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://1y53sevu6bxq"
+
+[deps]
+
+files=["res://zapis/EQ_gracz/buty_EQ_moje.ID.translation"]
+
+source_file="res://zapis/EQ_gracz/buty_EQ_moje.csv"
+dest_files=["res://zapis/EQ_gracz/buty_EQ_moje.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

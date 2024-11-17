@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://djxn4pm3kyv5r"
+
+[deps]
+
+files=["res://zapis/spodnie_moje.ID.translation"]
+
+source_file="res://zapis/spodnie_moje.csv"
+dest_files=["res://zapis/spodnie_moje.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

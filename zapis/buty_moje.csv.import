@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://qr43e850db56"
+
+[deps]
+
+files=["res://zapis/buty_moje.ID.translation"]
+
+source_file="res://zapis/buty_moje.csv"
+dest_files=["res://zapis/buty_moje.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

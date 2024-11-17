@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://cm38qeoonmhk2"
+
+[deps]
+
+files=["res://zapis/EQ_NPC1/spodnie_EQ_NPC1.ID.translation"]
+
+source_file="res://zapis/EQ_NPC1/spodnie_EQ_NPC1.csv"
+dest_files=["res://zapis/EQ_NPC1/spodnie_EQ_NPC1.ID.translation"]
+
+[params]
+
+compress=true
+delimiter=1

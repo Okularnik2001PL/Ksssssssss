@@ -41,37 +41,50 @@ func _on_item_list_item_activated(index: int) -> void:
 		var lines2 = content2.split("\n")
 		var new_content = ""
 		
-		# Modyfikacja odpowiednich danych
-		if lines[0].strip_edges() == "":  # Pomija puste linie
-			print("pusta")
-		var columns = lines[0].split(";")
-		print(columns)
-		# Sprawdzamy, czy kolumny mają wystarczającą ilość elementów
-		if columns.size() < 1:
-			print("za mała")
-			
-			# Tworzenie zwykłej tablicy na podstawie PackedStringArray
+		# Zabezpieczenie przed pustymi liniami
+		if lines.size() < 2 or lines[1].strip_edges() == "":
+			print("Brak danych w drugim wierszu")
+			return
+		
+		# Odczytanie drugiego wiersza (dane, które chcemy podmienić)
+		var columns = lines[1].split(";")
+		print("Odczytano dane:", columns)
+		
+		# Sprawdzamy, czy kolumny mają odpowiednią ilość elementów
+		if columns.size() < 2:
+			print("Za mało danych do podmiany")
+			return
+		
+		# Konwersja do tablicy, aby łatwo modyfikować
 		var columns_array = []
 		for i in range(columns.size()):
 			columns_array.append(columns[i])
-			
+
+		# Podmienianie danych na podstawie wybranego przedmiotu
 		if columns_array[0] != "ID":  # Sprawdzenie, czy nie jest to nagłówek
 			for line2 in lines2:
 				var columns2 = line2.split(";")
-					
-					# Sprawdzamy, czy kolumny2 mają wystarczającą ilość elementów i odpowiedni typ
-				if columns2.size() < 1||columns2[0]==""||columns2[0]=="ID":
+				
+				# Sprawdzamy, czy kolumny2 mają wystarczającą ilość elementów i odpowiedni typ
+				if columns2.size() < 1 or columns2[0] == "" or columns2[0] == "ID":
+					print("Pusta lub niepoprawna linia")
 					continue
-					#obliczamy id przedmiotu
+				
+				# Obliczamy ID przedmiotu na podstawie indexu
 				var oblicz = index + 1
-					#sukamy w skszynce
+				
+				# Znajdujemy odpowiedni przedmiot w pliku
 				if columns2[0] == str(oblicz):
 					var dane_do = columns2[1]
-					print(dane_do)
-					columns_array[1] = str(dane_do)  # Modyfikowanie wartości w kolumnie 1
-				
-				# Odtwarzanie linii po modyfikacji
-			new_content += ";".join(columns_array) + "\n"
+					print("Znaleziono dane:", dane_do)
+					
+					# Modyfikowanie odpowiednich wartości w drugim wierszu
+					columns_array[1] = str(dane_do)  # Podmienianie drugiej kolumny (nazwa przedmiotu)
+					print("Zmieniono:", columns_array)
+
+		# Odtwarzanie nagłówków i drugiego wiersza po modyfikacji
+		new_content += lines[0] + "\n"  # Dodajemy nagłówki
+		new_content += ";".join(columns_array) + "\n"  # Dodajemy zmodyfikowany wiersz
 		
 		# Przechodzenie na początek pliku
 		file.seek(0)
@@ -79,5 +92,5 @@ func _on_item_list_item_activated(index: int) -> void:
 		file.store_string(new_content)
 		# Zamykanie pliku
 		file.close()
-	
+
 	get_tree().change_scene_to_file("res://Nowe/Sceny/Wyposażenie.tscn")
