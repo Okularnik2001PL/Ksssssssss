@@ -1,16 +1,20 @@
 extends Node2D
 
-var Ekwipunek = "res://zapis/EQ_gracz/helmy_EQ_gracz.csv"
-var WorekHelmy = "res://zapis/helmy_moje.csv"
-var Dane = "res://tabelki/helmy_statystyki.csv"
 var Pancerz = 0
-var i = 0
-var j = 0
+var Masa = 0
 
 func _ready() -> void:
+	read_armour("res://zapis/EQ_gracz/helmy_EQ_gracz.csv","res://zapis/helmy_moje.csv","res://tabelki/helmy_statystyki.csv")
+	read_armour("res://zapis/EQ_gracz/zbroje_EQ_gracz.csv","res://zapis/zbroje_moje.csv","res://tabelki/zbroje_statystyki.csv")
+	read_armour("res://zapis/EQ_gracz/spodnie_EQ_gracz.csv","res://zapis/spodnie_moje.csv","res://tabelki/spodnie_statystki.csv")
+	read_armour("res://zapis/EQ_gracz/buty_EQ_moje.csv","res://zapis/buty_moje.csv","res://tabelki/buty_statystyki.csv")
+func read_armour(Ekwipunek,Worek,Dane):
+	
+	var i = 0
+	var j = 0
 	# Tworzenie instancji klasy FileAccess
 	var file = FileAccess.open(Ekwipunek, FileAccess.READ)
-	var file2 = FileAccess.open(WorekHelmy, FileAccess.READ)
+	var file2 = FileAccess.open(Worek, FileAccess.READ)
 	var file3 = FileAccess.open(Dane, FileAccess.READ)
 	if file && file2 && file3:
 				# Odczytanie całej zawartości pliku
@@ -50,5 +54,4 @@ func _ready() -> void:
 				# Przeszukiwanie drugiego pliku CSV
 				if columns[0] == j:
 					Pancerz+=int(columns[2])
-					
-	print(Pancerz)
+					Masa+= int(columns[3])
