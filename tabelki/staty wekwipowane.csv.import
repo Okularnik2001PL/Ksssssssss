@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bqnn5qeiip58c"
+
+[deps]
+
+files=["res://tabelki/staty wekwipowane.wartosc.translation"]
+
+source_file="res://tabelki/staty wekwipowane.csv"
+dest_files=["res://tabelki/staty wekwipowane.wartosc.translation"]
+
+[params]
+
+compress=true
+delimiter=1
