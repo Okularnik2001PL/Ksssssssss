@@ -95,7 +95,7 @@ func read_mass(Ekwipunek,Worek,Dane):
 			if columns.size() > 1 and columns[0] != "ID":
 				# Przeszukiwanie drugiego pliku CSV
 				if columns[0] == i:
-					j = columns[1]
+					j = int(columns[1])
 		#for przeszukajcy statystyki
 		for line in lines3:
 			if line.strip_edges() == "": 
@@ -104,7 +104,8 @@ func read_mass(Ekwipunek,Worek,Dane):
 			# Sprawdzamy, czy liczba kolumn jest większa niż 1, aby uniknąć błędów indeksowania
 			if columns.size() > 1 and columns[0] != "ID":
 				# Przeszukiwanie drugiego pliku CSV
-				if columns[0] == j:
+				print(j, columns[0])
+				if int(columns[0]) == j:
 					Masa+= int(columns[4])
 
 func read_durability(Ekwipunek,Worek,Dane):
@@ -142,7 +143,7 @@ func read_durability(Ekwipunek,Worek,Dane):
 			if columns.size() > 1 and columns[0] != "ID":
 				# Przeszukiwanie drugiego pliku CSV
 				if columns[0] == i:
-					j = columns[1]
+					j = int(columns[1])
 		#for przeszukajcy statystyki
 		for line in lines3:
 			if line.strip_edges() == "": 
@@ -151,5 +152,5 @@ func read_durability(Ekwipunek,Worek,Dane):
 			# Sprawdzamy, czy liczba kolumn jest większa niż 1, aby uniknąć błędów indeksowania
 			if columns.size() > 1 and columns[0] != "ID":
 				# Przeszukiwanie drugiego pliku CSV
-				if columns[0] == j:
+				if int(columns[0]) == j:
 					Wytrzymalosc+= int(columns[2])

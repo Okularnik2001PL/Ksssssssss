@@ -75,7 +75,7 @@ func _on_item_list_item_activated(index: int) -> void:
 				
 				# Znajdujemy odpowiedni przedmiot w pliku
 				if columns2[0] == str(oblicz):
-					var dane_do = columns2[1]
+					var dane_do = columns2[0]
 					print("Znaleziono dane:", dane_do)
 					
 					# Modyfikowanie odpowiednich wartości w drugim wierszu
